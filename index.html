@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StayAura | Luxury Hotel</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="#" class="logo">Stay<span>Aura.</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#booking" class="nav-btn">Book Now</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="subtitle">WELCOME TO STAYAURA</p>
+
+            <h1>Experience Luxury.<br>
+                Feel Like <span>Home.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover comfort, elegance and unforgettable
+                experiences at our luxury hotel.
+            </p>
+
+            <a href="#rooms" class="primary-btn">Explore Rooms</a>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section" id="booking">
+        <form id="bookingForm">
+
+            <div class="form-group">
+                <label for="checkin">Check-in</label>
+                <input type="date" id="checkin" required>
+            </div>
+
+            <div class="form-group">
+                <label for="checkout">Check-out</label>
+                <input type="date" id="checkout" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Guests</label>
+                <select id="guests">
+                    <option value="1">1 Guest</option>
+                    <option value="2" selected>2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                </select>
+            </div>
+
+            <button type="submit" class="primary-btn">
+                Check Availability
+            </button>
+
+        </form>
+        <p id="bookingMessage" aria-live="polite"></p>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="services">
+        <div class="about-text">
+            <p class="subtitle">ABOUT OUR HOTEL</p>
+
+            <h2>Your Comfort Is<br>Our <span>Priority.</span></h2>
+
+            <p>
+                At StayAura, we combine modern luxury with
+                warm hospitality to make every stay special.
+                Relax in beautiful rooms and enjoy excellent service.
+            </p>
+        </div>
+
+        <div class="about-image">
+            <img
+                src="Luxury Villa.jpg"
+                alt="Luxury hotel swimming pool">
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms" id="rooms">
+        <div class="section-heading">
+            <p class="subtitle">OUR ACCOMMODATION</p>
+            <h2>Explore Our <span>Rooms</span></h2>
+            <p>Choose the perfect room for your stay.</p>
+        </div>
+
+        <div class="room-container">
+
+            <article class="room-card">
+                <img
+                    src="deluxroom.jpg"
+                    alt="Deluxe hotel room">
+
+                <div class="room-info">
+                    <h3>Deluxe Room</h3>
+                    <p>Comfortable room with modern facilities.</p>
+                    <div class="room-bottom">
+                        <span>₹2,499 <small>/ night</small></span>
+                        <button class="book-room" data-room="Deluxe Room">
+                            Book Room
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="room-card">
+                <img
+                    src="room.jpg"
+                    alt="Luxury suite bedroom">
+
+                <div class="room-info">
+                    <h3>Luxury Suite</h3>
+                    <p>Spacious suite for a premium experience.</p>
+                    <div class="room-bottom">
+                        <span>₹4,999 <small>/ night</small></span>
+                        <button class="book-room" data-room="Luxury Suite">
+                            Book Room
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="room-card">
+                <img
+                    src="Executive Suite.jpg"
+                    alt="Premium hotel room">
+
+                <div class="room-info">
+                    <h3>Premium Room</h3>
+                    <p>Elegant interiors with extra comfort.</p>
+                    <div class="room-bottom">
+                        <span>₹3,499 <small>/ night</small></span>
+                        <button class="book-room" data-room="Premium Room">
+                            Book Room
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <p class="subtitle">GET IN TOUCH</p>
+        <h2>Ready for Your Next <span>Stay?</span></h2>
+        <p>Email: stayaura@example.com</p>
+        <p>Phone: +91 98765 43210</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#home" class="logo">Stay<span>Aura.</span></a>
+        <p>© 2026 StayAura. Created for a hotel management project.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
